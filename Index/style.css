@@ -1,0 +1,265 @@
+.infolinks {
+    color: rgb(0, 111, 139);
+    padding: 0;
+}
+
+/*Title page*/
+.title{
+    text-align: center;
+    font-size: 10vw;
+    color: aliceblue;
+    padding: 0;
+    margin-top: 5vw;;
+    margin-bottom: 2.5vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.hover{
+    text-decoration: none;
+    color:aliceblue;
+}
+
+.hover:hover .wiktitle, .Group{
+    display: none;
+}
+
+.hover:hover .Group{
+    display: inline;
+}
+
+.homepagebutton{
+    display: block;
+    margin: 1vw auto;
+    background-color:crimson;
+    color: black;
+    opacity: 0.5;
+    font-size: 5vw;
+    padding: 1vw 3vw;
+    border: none;
+    border-radius: 2vw;
+    transition: border-radius 0.1s;
+}
+
+.homepagebutton:hover {
+    background-color:dimgrey;
+    color: white;
+    opacity: 1;
+    border: none;
+    border-radius: 1vw;
+    transition: border-radius 0.1s;
+}
+
+/*Wiki*/
+.info {
+    border: 3px solid black;
+    height: 2.5vw;
+    display:flex;
+    align-items:center;
+    padding-left: 5px;
+    margin: 0px;
+    font-size: 1.3vw;
+    background-color:azure;
+}
+
+.info-list {
+    border: 3px solid black;
+    padding-bottom: 1vw;
+    margin: 0px;
+    padding-left: 30px;
+    font-size: 1.3vw;
+    background-color:azure;
+}
+
+aside{
+    float:left;
+    padding-right:1vw;
+}
+
+h1, h3{
+    font-size: 2vw;
+    padding-right:10px;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.name{
+    display:inline-flex;
+    align-items:center;
+}
+
+.bio{
+    display: flex;
+    margin: 0;
+}
+
+h5{
+    font-size: 1.3vw;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+p{
+    margin-top: 6px;
+    margin-bottom: 6px;
+    font-size: 1.4vw;
+}
+
+.wiki{
+    width: 75vw;
+    margin: auto;
+    margin-top: 10px;
+    background-color:black;
+    padding: 10px;
+    display: flex;
+}
+
+p, h1, h2, h3, h4, h5, h6, li{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+section{
+    color: white;
+}
+
+.stack{
+    display: block;
+}
+
+.charimg{
+    position: relative;
+}
+
+.charimg .imgbuttons{
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    -ms-transform: translate(-50%, -30%);
+    width: 90%;
+    opacity: 5%;
+}
+
+.charimg img{
+    width: 20vw;
+    border: 3px solid black;
+    margin: 0px;
+}
+
+.button{
+    font-size: 1.5vw;;
+    height: 2.5vw;
+    border: none;
+    cursor: pointer;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.imgbuttons:hover{
+    opacity: 80%;
+}
+
+.imgbuttons{
+    width: 100%;
+}
+
+/*---------------*/
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    padding: 1.5vw 2vw;
+    text-decoration: none;
+    font-size: 1.4vw;
+}
+
+.dropdown-players, .dropdown-allies, .dropdown-enemies, .dropdown-other{
+    list-style-type: none;
+    display: block;
+}
+
+li.dropdown {
+    display: inline-block;
+    min-width: 10.6vw;
+    border-right: 1px solid rgb(55, 55, 55);
+}
+
+.dropdown-content, .dropdown-content-gods, .dropdown-content-players, .dropdown-content-allies, .dropdown-content-enemies, .dropdown-content-other, .dropdown-content-characters{
+    display: none;
+    position: absolute;
+    background-color: black;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a, .dropdown-content-gods a, .dropdown-content-players a , .dropdown-content-allies a, .dropdown-content-enemies a, .dropdown-content-other a{
+    color: white;
+    display: block;
+    text-align: left;
+    border-right: 1px solid rgb(55, 55, 55);
+    border-bottom: 1px solid rgb(55, 55, 55);
+}
+
+.dropdown-content a:hover, .dropdown-content-gods a:hover, .dropdown-content-characters a:hover{
+    background-color:rgb(255, 255, 255);
+    color: black;
+}
+
+.dropdown-content-characters a{
+    color: white;
+    text-align: left;
+    min-width: 6vw;
+}
+
+.dropdown:hover .dropdown-content-gods {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+}
+
+.dropdown:hover .dropdown-content {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.dropdown:hover .dropdown-content-characters {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.dropdown-players:hover .dropdown-content-players {
+    display: inline-grid;
+    grid-template-columns: auto auto;
+}
+
+.dropdown-allies:hover .dropdown-content-allies {
+    display: inline-grid;
+    grid-template-columns: auto auto auto auto auto;
+    min-width: 60vw;
+}
+
+.dropdown-enemies:hover .dropdown-content-enemies {
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+}
+
+.dropdown-other:hover .dropdown-content-other {
+    display: inline-grid;
+    grid-template-columns: auto auto auto auto;
+    min-width: 45vw;
+}
+
+.character-list{
+    padding: 0
+}
+
+.information{
+    margin-left: -20px;
+}
