@@ -40,9 +40,17 @@
     transition: border-radius 0.1s;
 }
 
+.wiktitle {
+    color:crimson;
+}
+
+.Group {
+    color: gold;
+}
+
 .homepagebutton:hover {
-    background-color:dimgrey;
-    color: white;
+    background-color:gold;
+    color: black;
     opacity: 1;
     border: none;
     border-radius: 1vw;
@@ -67,7 +75,7 @@
     margin: 0px;
     padding-left: 30px;
     font-size: 1.3vw;
-    background-color:azure;
+    background-color: azure;
 }
 
 aside{
